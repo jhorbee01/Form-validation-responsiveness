@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+.left {
+  width: auto;
+  padding: 5rem;
+  color: white;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 1rem;
+}
+.right {
+  width: auto;
+  padding: 5em;
+}
+form {
+  padding: 15px;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+input,
+button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  outline: transparent;
+  width: 100%;
+}
+input:required:focus:invalid {
+  outline: none;
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+
+input:focus:invalid + .validation {
+  display: inline;
+  color: hsl(0, 100%, 74%);
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+input:focus:valid {
+  border: 1px solid hsl(246, 25%, 77%);
+}
+.validation {
+  display: none;
+}
+.form-top {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+}
+.terms-form {
+  font-size: 0.7em;
+  text-align: center;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  color: grey;
+}
+.terms-form span {
+  color: hsl(0, 100%, 74%);
+}
+.Btn {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: unset;
+    align-items: center;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+  }
+  .left {
+    width: auto;
+    padding: 2rem;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .right {
+    width: auto;
+    padding: 1em;
+  }
+  form {
+    padding: 15px;
+    background-color: white;
+    margin-top: 1rem;
+  }
+  input,
+  button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    outline: transparent;
+    width: 100%;
+  }
+}
